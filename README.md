@@ -1,12 +1,15 @@
-number = 0
+number = 5
 
-if number > 0:
-    print('Positive number')
+# outer if statement
+if number >= 0:
+    # inner if statement
+    if number == 0:
+      print('Number is 0')
+    
+    # inner else statement
+    else:
+        print('Number is positive')
 
-elif number <0:
-    print('Negative number')
-
+# outer else statement
 else:
-    print('Zero')
-
-print('This statement is always executed')
+    print('Number is negative')
